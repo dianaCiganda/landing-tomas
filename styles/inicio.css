@@ -155,7 +155,7 @@ body {
     margin-top: 60px;
     width: 100%;
     overflow: hidden;
-    background: linear-gradient(135deg, var(--turquesa), var(--turquesa-oscuro));
+    background: var(--turquesa);
     position: relative;
 }
 
@@ -195,11 +195,12 @@ body {
     max-width: 280px;
     border-radius: 20px;
     overflow: hidden;
-    border: 4px solid white;
+    border: 4px solid var(--blanco);
     box-shadow: 0 12px 48px var(--sombra-media);
     aspect-ratio: 1/1;
     object-fit: cover;
     transition: transform 0.4s ease;
+    background: var(--crema);
 }
 
 .profile-image:hover {
@@ -297,6 +298,7 @@ body {
     font-weight: 700;
     letter-spacing: -0.5px;
     margin-top: 0.5rem;
+    color: var(--texto-principal);
 }
 
 .section-header p {
@@ -351,6 +353,7 @@ body {
     font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 0.3rem;
+    color: var(--texto-principal);
 }
 
 .funding-agency {
@@ -403,6 +406,7 @@ body {
     font-size: 1.05rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
+    color: var(--texto-principal);
 }
 
 .overview-card p {
@@ -530,6 +534,7 @@ body {
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0.2rem;
+    color: var(--texto-principal);
 }
 
 .teaching-title {
@@ -597,6 +602,7 @@ body {
     font-size: 1.05rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
+    color: var(--texto-principal);
 }
 
 .supervision-desc {
@@ -693,7 +699,7 @@ body {
 .footer-name {
     font-size: 1.2rem;
     font-weight: 600;
-    color: white;
+    color: #FFFFFF;
     margin-bottom: 0.2rem;
 }
 
@@ -772,8 +778,10 @@ body {
 }
 
 /* ============================================
-   RESPONSIVE
+   RESPONSIVE - SIN !important
    ============================================ */
+
+/* ===== TABLETS (max-width: 1024px) ===== */
 @media (max-width: 1024px) {
     .nav-links {
         display: none;
@@ -819,6 +827,7 @@ body {
     }
 }
 
+/* ===== MÓVIL (max-width: 768px) ===== */
 @media (max-width: 768px) {
     .container {
         padding: 0 1.5rem;
@@ -868,8 +877,24 @@ body {
         flex-direction: column;
         text-align: center;
     }
+
+    /* ===== Ajuste de colores en móvil (sin !important) ===== */
+    /* Las secciones ya tienen sus colores definidos arriba,
+       solo ajustamos lo que cambia en móvil */
+    .funding-card,
+    .pub-item,
+    .supervision-card {
+        /* Ya son blancos por defecto, no hace falta cambiarlos */
+    }
+
+    .overview-card,
+    .teaching-card,
+    .update-card {
+        /* Ya son marfil por defecto, no hace falta cambiarlos */
+    }
 }
 
+/* ===== MÓVIL PEQUEÑO (max-width: 480px) ===== */
 @media (max-width: 480px) {
     .container {
         padding: 0 1rem;
