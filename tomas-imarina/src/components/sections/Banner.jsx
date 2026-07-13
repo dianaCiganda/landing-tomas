@@ -12,7 +12,7 @@ const Banner = () => {
         <div className="banner-background">
           {!bannerError ? (
             <img
-              src="/assets/banner.jpeg"
+              src={`${import.meta.env.BASE_URL}assets/banner.jpeg`}
               alt="Banner"
               className="banner-image"
               onError={() => setBannerError(true)}
@@ -25,7 +25,7 @@ const Banner = () => {
         <div className="banner-profile">
           {!profileError ? (
             <img
-              src="/assets/perfil.jpeg"
+              src={`${import.meta.env.BASE_URL}assets/perfil.jpeg`}
               alt="Tomás Imarina"
               className="banner-profile-image"
               onError={() => setProfileError(true)}

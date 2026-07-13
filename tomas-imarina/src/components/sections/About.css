@@ -353,3 +353,32 @@
     font-size: 1.15rem;
   }
 }
+/* ============================================
+   TÍTULO ABOUT ME - MÁS GRANDE Y CON SOMBRA
+   ============================================ */
+
+.section-tag {
+  font-size: 1.2rem; /* Aumenta el tamaño base */
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--principal);
+  text-shadow: 
+    0 2px 4px rgba(46, 196, 182, 0.3),
+    0 4px 8px rgba(46, 196, 182, 0.15),
+    0 8px 16px rgba(46, 196, 182, 0.08);
+  display: inline-block;
+  padding: 0.3rem 1.2rem;
+  background: rgba(46, 196, 182, 0.08);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  margin-bottom: 1.5rem;
+}
+
+.section-tag:hover {
+  text-shadow: 
+    0 2px 8px rgba(46, 196, 182, 0.5),
+    0 4px 16px rgba(46, 196, 182, 0.25),
+    0 8px 32px rgba(46, 196, 182, 0.12);
+  transform: scale(1.05);
+  background: rgba(46, 196, 182, 0.15);
+}

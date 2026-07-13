@@ -60,6 +60,12 @@ const Header = () => {
         <ul className={`nav-links ${isMenuOpen ? "active" : ""}`}>
 
           <li>
+            <button onClick={() => goToSection("about")}>
+              About
+            </button>
+          </li>
+
+          <li>
             <button onClick={() => goToSection("projects")}>
               Projects
             </button>

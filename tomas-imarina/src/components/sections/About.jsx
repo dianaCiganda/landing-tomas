@@ -27,7 +27,7 @@ const About = () => {
 
   return (
     <section id="about" className="about">
-      <div className="container">
+      <div className="about-container">
         <div className="about-wrapper">
           {/* Contactos - SIN FOTO DE PERFIL */}
           <div className="about-profile">
